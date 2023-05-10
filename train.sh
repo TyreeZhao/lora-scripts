@@ -2,10 +2,10 @@
 # LoRA train script by @Akegarasu
 
 # Train data path | 设置训练用模型、图片
-pretrained_model="./sd-models/model.ckpt" # base model path | 底模路径
+pretrained_model="./sd-models/v1-5-pruned-emaonly.ckpt" # base model path | 底模路径
 is_v2_model=0                             # SD2.0 model | SD2.0模型 2.0模型下 clip_skip 默认无效
 parameterization=0                        # parameterization | 参数化 本参数需要和 V2 参数同步使用 实验性功能
-train_data_dir="./train/aki"              # train dataset path | 训练数据集路径
+train_data_dir="./train"              # train dataset path | 训练数据集路径
 reg_data_dir=""                           # directory for regularization images | 正则化数据集路径，默认不使用正则化图像。
 
 # Network settings | 网络设置
@@ -37,7 +37,7 @@ lr_warmup_steps=0                   # warmup steps | 学习率预热步数，lr_
 lr_restart_cycles=1                 # cosine_with_restarts restart cycles | 余弦退火重启次数，仅在 lr_scheduler 为 cosine_with_restarts 时起效。
 
 # Output settings | 输出设置
-output_name="aki"           # output model name | 模型保存名称
+output_name="avatar"           # output model name | 模型保存名称
 save_model_as="safetensors" # model save ext | 模型保存格式 ckpt, pt, safetensors
 
 # Resume training state | 恢复训练设置
