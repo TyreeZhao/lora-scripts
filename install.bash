@@ -16,4 +16,6 @@ cd ./sd-scripts
 pip install --upgrade -r requirements.txt
 pip install --upgrade lion-pytorch lycoris-lora dadaptation fastapi uvicorn wandb
 
+pip install --no-cache-dir boto3
+
 echo "Install completed"
